@@ -69,17 +69,3 @@ ul li a:hover {
   background: var(--blue);
   transform: scale(103%);
 }
-footer {
-  color: var(--paragraph);
-  opacity: 0.8;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  transition: opacity 200ms;
-}
-footer:hover {
-  opacity: 1;
-}
-footer a {
-  color: var(--paragraph);
-}
