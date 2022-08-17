@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  --light-blue: hsl(0, 0%, 90%);
+  --blue: hsl(230, 57%, 50%);
+  --title: hsl(230, 100%, 9%);
+  --paragraph: hsl(230, 100%, 9%);
+  --button: hsl(228, 81%, 59%);
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: var(--light-blue);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem; /* precisa voltar a fonte para 16px */
+}
+.container {
+  text-align: center;
+  width: 30rem;
+  margin: 6rem auto;
+}
+img {
+  width: 100%;
+}
+img.avatar {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  padding: 0.37rem;
+  border: var(--button) solid 4px;
+}
+h1 {
+  color: var(--title);
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.username {
+  color: var(--paragraph);
+  font-family: 'Roboto Mono';
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+  opacity: 0.8;
+}
+ul li a {
+  background: var(--button);
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1.6rem;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+  border-radius: 0.6rem;
+  transition: all 200ms ease;
+}
+ul {
+  margin-bottom: 4.8rem;
+}
+ul li a:hover {
+  background: var(--blue);
+  transform: scale(103%);
+}
+footer {
+  color: var(--paragraph);
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  transition: opacity 200ms;
+}
+footer:hover {
+  opacity: 1;
+}
+footer a {
+  color: var(--paragraph);
+}
